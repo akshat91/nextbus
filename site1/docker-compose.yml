@@ -1,7 +1,8 @@
-version:1
-services:reverse proxy
-app:nextbuss
-image:nginx:1.9
-volumexs:/home/ubuntu/nginx/html
+version: '2'
+services:
+app: 
+image: nginx:1.9
+volumes:
+-.:/usr/share/nginx/html/
 expose:
 -"80"
