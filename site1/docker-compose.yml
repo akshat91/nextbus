@@ -1,0 +1,7 @@
+version:1
+services:reverse proxy
+app:nextbuss
+image:nginx:2
+volumexs:/home/ubuntu/nginx/html
+expose:
+-"80"
